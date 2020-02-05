@@ -108,6 +108,7 @@ void dukienphanbo(int *a, int *b, int *c,int *d, int n, int m)
     }
 }
 
+
 int main()
 {
     int *alloca = (int *)malloc(n*m*sizeof(int));
@@ -146,7 +147,7 @@ int main()
         work[i] = avai[i];
         fin[i] = 0;
     }
-    dukienphanbo(req,need,avai,alloca,n,m);
+   dukienphanbo(req,need,avai,alloca,n,m);
    free(alloca);
    free(need);
    free(Max);
